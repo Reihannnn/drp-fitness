@@ -17,7 +17,7 @@ const HeroPage = () => {
           Temukan program latihan yang terarah, dukungan nyata, dan hasil yang bisa kamu banggakan.
         </p>
         <a
-          href="#mulai"
+          href="https://wa.me/6281384334250"
           className="inline-block mt-8 px-6 py-3 bg-gray-600 text-white font-semibold rounded hover:bg-red-700 transition duration-300"
         >
           Mulai Sekarang
