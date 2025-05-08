@@ -13,7 +13,7 @@ const HeroPage = () => {
         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight gradient-text">
           Bangun Kekuatan, Disiplin, dan Percaya Diri —<br className="hidden md:block" /> DRP Ada Buat Kamu Sepanjang Perjalanan.
         </h1>
-        <p className="mt-4 text-lg text-gray-300 max-w-xl mx-auto">
+        <p className="mt-4 text-lg text-white max-w-xl mx-auto">
           Temukan program latihan yang terarah, dukungan nyata, dan hasil yang bisa kamu banggakan.
         </p>
         <a
