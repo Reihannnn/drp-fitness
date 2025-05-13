@@ -12,11 +12,11 @@ const CoachSectionCategorySolo = () => {
           </li>
           <li className="personal-trainer gap-2">
             <p className="lg:text-lg font-bold">Rp. 368.000</p>
-            <p className="text-md font-medium"> / 8 Sesi</p>
+            <p className="text-md font-medium"> / 8 Sesi / bulan</p>
           </li>
           <li className="personal-trainer gap-2">
             <p className="lg:text-lg font-bold">Rp. 588.000</p>
-            <p className="text-md font-medium"> / 14 Sesi</p>
+            <p className="text-md font-medium"> / 14 Sesi / bulan</p>
           </li>
         </ul>
         <CoachSectionCategoryDuo/>
