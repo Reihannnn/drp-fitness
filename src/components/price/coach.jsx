@@ -36,7 +36,7 @@ export const CoachSectionCategoryDuo = () =>{
         <ul className="space-y-6">
           <li className="personal-trainer gap-2">
             <p className="lg:text-lg font-bold">Rp. 650.000</p>
-            <p className="text-md font-medium">/ 10 Sesi</p>
+            <p className="text-md font-medium">/ 10 Sesi / bulan </p>
           </li>
         </ul>
       </div>
@@ -54,7 +54,7 @@ export const CoachSectionCategoryTrio = () =>{
         <ul className="space-y-6">
           <li className="personal-trainer gap-2">
             <p className="lg:text-sm font-bold">Rp. 1.000.000</p>
-            <p className="text-md font-medium">/ 10 Sesi</p>
+            <p className="text-md font-medium">/ 10 Sesi / bulan</p>
           </li>
         </ul>
       </div>  
