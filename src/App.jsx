@@ -6,6 +6,7 @@ import HeroPage from "./pages/Hero";
 import GymPricing from "./pages/price";
 import MemberPhoto from "./pages/OurMember";
 import LocationSection from "./pages/location";
+import DetailReview from "./pages/detail-review";
 function App() {
   return (
     <section>
@@ -19,6 +20,7 @@ function App() {
 
       <Facility />
       <LocationSection />
+      
     </section>
   );
 }

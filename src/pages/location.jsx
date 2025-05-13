@@ -23,7 +23,7 @@ const LocationSection = () => {
             href="https://www.google.com/maps/place/DRP+GYM/@-6.2572083,107.0825477,16.75z/data=!4m6!3m5!1s0x2e698f893e750471:0x6a466b1065a84b7c!8m2!3d-6.2564664!4d107.0827773!16s%2Fg%2F11pvp0ftl0?entry=ttu&g_ep=EgoyMDI1MDUwNS4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-4 px-6 py-3 bg-black text-white rounded-full hover:bg-gray-600 transition"
+            className="inline-block mt-4 px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-gray-600 transition"
           >
             Lihat di Google Maps
           </a>

@@ -19,6 +19,7 @@ const MentorProfile = (props) => {
       >
         <div className="border p-3 flex gap-3">
           <i class="hgi hgi-stroke hgi-instagram"></i>
+          
           <p>instagram</p>
         </div>
       </a>

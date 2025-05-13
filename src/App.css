@@ -9,3 +9,9 @@
 *{
   scroll-behavior: smooth;
 }
+
+.personal-trainer{
+  display: flex;
+  align-items: center;
+  
+}

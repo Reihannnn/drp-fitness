@@ -1,6 +1,6 @@
-import CoachSectionCategory from "../components/price/coach";
-import MemberCategory from "../components/price/member";
+import MemberCategory, { MemberCategorySquad } from "../components/price/member";
 import VisitCategory from "../components/price/visit";
+import CoachSectionCategorySolo from "../components/price/coach"
 
 const GymPricing = () => {
   return (
@@ -9,15 +9,17 @@ const GymPricing = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Harga
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {/* Visit Category */}
           <VisitCategory />
 
-          {/* Member Category */}
+          {/* Member Category solo*/}
           <MemberCategory />
+          {/* Member Category squad*/}
+          <MemberCategorySquad />
 
           {/* Coach Payment Category */}
-          <CoachSectionCategory />
+          <CoachSectionCategorySolo />
         </div>
       </div>
     </section>
