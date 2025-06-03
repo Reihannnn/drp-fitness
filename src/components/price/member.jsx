@@ -11,11 +11,7 @@ const MemberCategory = () => {
 
         <br />
 
-        <p className="text-3xl font-bold mb-2">Rp.405.000</p>
-        <ul className="space-y-3">
-          <li>- Akses full 3 bulan menjadi member</li>
-          <li>- Connected to komunitas yang solid, satu tujuan</li>
-        </ul>
+        
       </div>
     </div>
   );
