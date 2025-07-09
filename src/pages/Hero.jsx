@@ -27,7 +27,7 @@ const HeroPage = () => {
           </p>
           <a
             href="https://wa.me/6281384334250"
-            className="inline-block mt-8 px-6 py-3 bg-blue-600 text-white font-semibold rounded hover:bg-green-700 transition duration-300"
+            className="inline-block mt-8 px-6 py-3 bg-blue-500 text-white font-semibold rounded hover:bg-green-700 transition duration-300"
           >
             <div className="flex items-center gap-3">
               <i class="hgi hgi-stroke hgi-whatsapp"></i> Mulai Sekarang

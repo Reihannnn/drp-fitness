@@ -6,7 +6,7 @@ import back_machine from "/image/facility/back.jpg";
 
 const Facility = () => {
   return (
-    <section class="py-16 px-4 bg-black text-white" id="facility">
+    <section class="py-16 px-4 bg-gray-900 text-white" id="facility">
       <div class="max-w-7xl mx-auto">
         <h2 class="text-3xl md:text-5xl font-bold mb-12 text-center"> Fasilitas Gym</h2>
 
