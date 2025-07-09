@@ -1,6 +1,6 @@
 // variable global in this file
 const container =
-  "p-4 h-[375px] w-[300px] bg-gray-700 rounded-3xl flex flex-col justify-between text-white";
+  "p-4 h-[400px] w-[320px] bg-gray-700 rounded-3xl flex flex-col justify-between text-white";
 
 export const CardPrice = (props) => {
   return (
