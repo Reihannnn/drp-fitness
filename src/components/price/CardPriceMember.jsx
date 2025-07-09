@@ -4,7 +4,7 @@ const container =
 
 export const CardPrice = (props) => {
   return (
-    <div className={container}>
+    <div id = "price" className={container}>
       <div>
         <h1 className="text-4xl m-2 font-bold text-amber-400 text-center p-2">
           {props.kategori}
