@@ -15,7 +15,7 @@ const PriceNew = () => {
       <hr className="text-amber-400 m-2 "/>
 
       <div className="flex gap-5 flex-wrap justify-center p-5">
-        <CardPrice kategori="1 BULAN" harga="Rp. 150.000" />
+        <CardPrice kategori="1 BULAN" harga="Rp. 155.000" />
         <CardPrice kategori="SQUAD (4)" harga="Rp. 520.000" />
         <Senam kategori="Senam" harga="One Time" />
         <Visit kategori="Visit" harga="Rp. 30.000" />
