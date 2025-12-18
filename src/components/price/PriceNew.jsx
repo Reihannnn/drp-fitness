@@ -1,4 +1,4 @@
-import { Senam, CardPrice, Visit } from "./CardPriceMember";
+import { Senam, CardPrice, Visit, Boxing } from "./CardPriceMember";
 
 const PriceNew = () => {
   return (
@@ -15,9 +15,10 @@ const PriceNew = () => {
       <hr className="text-amber-400 m-2 "/>
 
       <div className="flex gap-5 flex-wrap justify-center p-5">
-        <CardPrice kategori="1 BULAN" harga="Rp. 155.000" />
-        <Senam kategori="Senam" harga="One Time" />
+        <CardPrice kategori="1 Bulan" harga="Rp. 155.000" />
         <Visit kategori="Visit" harga="Rp. 30.000" />
+        <Senam kategori="Senam" harga="One Time" />
+        <Boxing kategori="Boxing" harga="Per Sesi" />
       </div>
     </section>
   );

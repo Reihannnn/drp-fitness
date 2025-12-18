@@ -34,9 +34,9 @@ export const Senam = (props) => {
           {props.kategori}
         </h1>
         <hr className="text-amber-300" />
-        <p className="text-center mt-4 text-3xl"> Aerobik = 20k</p>
+        <p className="text-center mt-4 text-3xl"> Aerobik = Rp. 20.000</p>
         <br />
-        <p className="text-center text-3xl">Salsa = 25k</p>
+        <p className="text-center text-3xl">Salsa = Rp. 25.000</p>
       </div>
       <h1 className="text-center text-4xl text-amber-400 font-bold">
         {props.harga}
@@ -65,3 +65,32 @@ export const Visit = (props) => {
     </div>
   );
 };
+export const Boxing = (props) => {
+  return (
+    <div className={container}>
+      <div>
+        <h1 className="text-4xl m-2 font-bold text-amber-400 text-center p-2">
+          {props.kategori}
+        </h1>
+        <hr className="text-amber-300" />
+
+        <p className="text-center m-4 text-2xl">
+          {" "}
+          1 Sesi = Rp. 60.000
+        </p>
+        <p className="text-center m-4 text-2xl">
+          {" "}
+          4 Sesi = Rp. 200.000          
+        </p>
+        <p className="text-center m-4 text-2xl">
+          {" "}
+          8 Sesi = Rp. 380.000                    
+        </p>
+      </div>
+      <h1 className="text-center text-4xl text-amber-400 font-bold">
+        {props.harga}
+      </h1>
+    </div>
+  );
+};
+
