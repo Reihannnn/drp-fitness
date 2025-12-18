@@ -15,7 +15,7 @@ const LocationSection = () => {
             Lokasi strategis, mudah diakses, dan dekat dengan pusat kota.
           </p>
           <div className="space-y-2 text-base">
-            <p>🏠 Gramaupri Tamansari No. 14 cc, RW.37, Wanasari, Kec. Cibitung, Kabupaten Bekasi, Jawa Barat 17520</p>
+            <p>🏠 Perumahan GramaPuri Tamansari No. 14 cc, RW.37, Wanasari, Kec. Cibitung, Kabupaten Bekasi, Jawa Barat 17520</p>
             <p>📞 Telepon: +62 859-1353-3987</p>
             <p>🕒 Jam Buka: 08:00 - 22:00 (Senin - Minggu)</p>
           </div>
