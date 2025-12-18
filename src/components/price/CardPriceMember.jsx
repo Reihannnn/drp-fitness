@@ -69,7 +69,7 @@ export const Boxing = (props) => {
   return (
     <div className={container}>
       <div>
-        <h1 className="text-4xl m-2 font-bold text-amber-400 text-center p-2">
+        <h1 className="text-3xl mt-3.5 m-2 font-bold text-amber-400 text-center p-2">
           {props.kategori}
         </h1>
         <hr className="text-amber-300" />

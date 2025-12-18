@@ -18,7 +18,7 @@ const PriceNew = () => {
         <CardPrice kategori="1 Bulan" harga="Rp. 155.000" />
         <Visit kategori="Visit" harga="Rp. 30.000" />
         <Senam kategori="Senam" harga="One Time" />
-        <Boxing kategori="Boxing" harga="Per Sesi" />
+        <Boxing kategori="Boxing Muaythai" harga="Per Sesi" />
       </div>
     </section>
   );
