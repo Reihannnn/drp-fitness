@@ -7,11 +7,12 @@ import MemberPhoto from "./pages/OurMember";
 import LocationSection from "./pages/location";
 import PriceNew from "./components/price/PriceNew";
 import { PersonalTrainerPrice } from "./components/price/personalTrainerPrice";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 function App() {
   return (
     <section>
+      <SpeedInsights/>
       <NavigationBar />
-
       <HeroPage />
 
       <CoachSection />
