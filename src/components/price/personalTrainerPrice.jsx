@@ -6,8 +6,8 @@ const h1 = "text-center text-white text-5xl font-bold"
 export const PersonalTrainerPrice = () =>{
   return (
     <section className="bg-gray-900 p-12 ">
+      <h1 className={h1}>LIST HARGA</h1>
       <h1 className={h1}>PERSONAL TRAINER</h1>
-      <h1 className={h1}>PRICE LIST</h1>
       <hr className="text-white mt-5"/>
       
       {/* card" dari pilihan harga personal trainer*/}

@@ -1,12 +1,12 @@
 import MemberImage from "../components/member/memberImage"
-import member1 from "/image/member/member1.jpg"
-import member2 from "/image/member/member2.jpg"
-import member3 from "/image/member/member3.jpg"
-import member4 from "/image/member/member4.jpg"
-import member5 from "/image/member/member5.jpg"
-import member6 from "/image/member/member6.jpg"
-import member7 from "/image/member/member7.jpg"
-import member8 from "/image/member/member8.jpg"
+import member1 from "/image/member/member1.webp"
+import member2 from "/image/member/member2.webp"
+import member3 from "/image/member/member3.webp"
+import member4 from "/image/member/member4.webp"
+import member5 from "/image/member/member5.webp"
+import member6 from "/image/member/member6.webp"
+import member7 from "/image/member/member7.webp"
+import member8 from "/image/member/member8.webp"
 
 const member = [member1,member2,member3,member4,member5,member6,member7,member8] 
 

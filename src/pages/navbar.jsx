@@ -23,10 +23,10 @@ const NavigationBar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-10 text-white text-lg font-medium">
-          <List_Right_Navbar list="Price" link="#price" />
+          <List_Right_Navbar list="Harga" link="#price" />
           <List_Right_Navbar list="Mentor" link="#mentor" />
-          <List_Right_Navbar list="Facility" link="#facility" />
-          <List_Right_Navbar list="Location" link="#location" />
+          <List_Right_Navbar list="Fasilitas" link="#facility" />
+          <List_Right_Navbar list="Lokasi" link="#location" />
         </ul>
 
         {/* Mobile Menu Button */}

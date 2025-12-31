@@ -1,8 +1,8 @@
-import allInOne from "/image/facility/all-in-one.jpg";
-import dumble_area from "/image/facility/dumblee.jpg";
-import bench_press from "/image/facility/bench-press.jpg";
-import cardio_machine from "/image/facility/cardio.jpg";
-import back_machine from "/image/facility/back.jpg";
+import allInOne from "/image/facility/all-in-one.webp";
+import dumble_area from "/image/facility/dumblee.webp";
+import bench_press from "/image/facility/bench-press.webp";
+import cardio_machine from "/image/facility/cardio.webp";
+import back_machine from "/image/facility/back.webp";
 
 const Facility = () => {
   return (
@@ -19,7 +19,7 @@ const Facility = () => {
               class="w-full h-full object-cover"
             />
             <div class="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black/80 to-transparent w-full">
-              <h3 class="text-lg font-semibold">
+              <h3 class="md:text-lg font-semibold text-[10px]">
                 Bench Press Smith Machine
               </h3>
             </div>
@@ -33,7 +33,7 @@ const Facility = () => {
               class="w-full h-full object-cover"
             />
             <div class="absolute bottom-0 left-0 p-3 bg-gradient-to-t from-black/80 to-transparent w-full">
-              <h3 class="text-sm font-semibold">Machine Zone</h3>
+              <h3 class="md:text-lg font-semibold text-[7.5px]">Machine Zone</h3>
             </div>
           </div>
 
@@ -44,7 +44,7 @@ const Facility = () => {
               class="w-full h-full object-cover"
             />
             <div class="absolute bottom-0 left-0 p-3 bg-gradient-to-t from-black/80 to-transparent w-full">
-              <h3 class="text-sm font-semibold">Cardio Zone</h3>
+              <h3 class="lg:text-md md:text-sm font-semibold text-[7.5px]">Cardio Zone</h3>
             </div>
           </div>
 
@@ -56,7 +56,7 @@ const Facility = () => {
               class="w-full h-full object-cover"
             />
             <div class="absolute bottom-0 left-0 p-3 bg-gradient-to-t from-black/80 to-transparent w-full">
-              <h3 class="text-sm font-semibold">Back Machine</h3>
+              <h3 class="lg:text-md md:text-sm font-semibold text-[8px]">Back Machine</h3>
             </div>
           </div>
 
@@ -67,7 +67,7 @@ const Facility = () => {
               class="w-full h-full object-cover"
             />
             <div class="absolute bottom-0 left-0 p-3 bg-gradient-to-t from-black/80 to-transparent w-full">
-              <h3 class="text-sm font-semibold">Weights & Dumbbells</h3>
+              <h3 class="lg:text-md md:text-sm font-semibold text-[7.5px]">Weights & Dumbbells</h3>
             </div>
           </div>
         </div>

@@ -8,7 +8,7 @@ const PriceNew = () => {
           DRP FITNESS
         </h1>
         <h1 className="text-6xl font-bold text-center text-amber-400">
-          PRICE LIST
+          LIST HARGA
         </h1>
       </div>
 

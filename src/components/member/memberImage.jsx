@@ -8,7 +8,7 @@ const MemberImage = (props) =>{
             >
               <img
                 src={image}
-                alt={`Member ${i + 1}`}
+                alt={`Member DRP Fitness Cibitung ${i + 1}`}
                 className={`w-full h-48 object-cover  ${i + 1 === 4 ? `object-top`  : `object-center`}`}
               />
               <div className="bg-white p-2 text-center text-black font-medium">

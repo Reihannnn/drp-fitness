@@ -8,7 +8,7 @@ const LocationSection = () => {
         {/* Text Info */}
         <div className="space-y-6 animate-fade-in">
           <h2 className="text-4xl font-extrabold tracking-tight">
-            📍 Lokasi Gym Kami
+            📍 Lokasi DRP Fitness
           </h2>
           <p className="text-lg text-gray-600">
             Datang dan rasakan pengalaman berolahraga terbaik bersama kami!
