@@ -1,5 +1,5 @@
-import mentor_aji from "/image/aji-mentor.jpg";
-import mentor_regi from "/image/regi-mentor.jpg";
+import mentor_aji from "/image/aji-mentor.webp";
+import mentor_regi from "/image/regi-mentor.webp";
 
 const MentorProfile = (props) => {
   return (
