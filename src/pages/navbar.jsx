@@ -1,6 +1,6 @@
 import { useState } from "react";
 import List_Right_Navbar from "../components/navbar/list-right-navbar";
-import drp_logo from "/image/drp_logo.jpg";
+import drp_logo from "/image/drp_logo.webp";
 import { Menu, X } from "lucide-react"; // gunakan icon lucide atau fontawesome
 
 const NavigationBar = () => {
