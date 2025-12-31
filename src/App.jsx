@@ -8,11 +8,13 @@ import LocationSection from "./pages/location";
 import PriceNew from "./components/price/PriceNew";
 import { PersonalTrainerPrice } from "./components/price/personalTrainerPrice";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/next"
 import Footer from "./components/footer/footer";
 function App() {
   return (
     <section>
       <SpeedInsights/>
+      <Analytics/>
       <NavigationBar />
       <HeroPage />
 
