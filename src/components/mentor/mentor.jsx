@@ -6,7 +6,7 @@ const MentorProfile = (props) => {
     <>
       <img
         src={props.name == "Aji" ? mentor_aji : mentor_regi}
-        alt=""
+        alt="para mentor drp fitness gym cibitung"
         className="w-[175px] md:w-[300px] lg:w-[300px] rounded-full"
       />
       <h1 className="text-5xl font-bold">{props.name}</h1>

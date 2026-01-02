@@ -4,7 +4,7 @@ const CoachSection = () => {
   return (
     <>
       <section
-        className="md:flex lg:flex bg-black text-white p-5 justify-center gap-8"
+        className="md:flex lg:flex bg-black text-white p-5 pb-20 justify-center gap-8"
         id="mentor"
       >
         <section className="ml-10 md:w-2/5">

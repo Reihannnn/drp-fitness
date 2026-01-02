@@ -1,25 +1,10 @@
 import { Senam, CardPrice, Visit, Boxing } from "./CardPriceMember";
+import priceList from "/image/pricelist-drp.webp";
 
 const PriceNew = () => {
   return (
-    <section className=" bg-gray-900 p-16">
-      <div className="p-5">
-        <h1 className="text-3xl font-semibold text-center text-white">
-          DRP FITNESS
-        </h1>
-        <h1 className="text-6xl font-bold text-center text-amber-400">
-          LIST HARGA
-        </h1>
-      </div>
-
-      <hr className="text-amber-400 m-2 "/>
-
-      <div className="flex gap-5 flex-wrap justify-center p-5">
-        <CardPrice kategori="1 Bulan" harga="Rp. 155.000" />
-        <Visit kategori="Visit" harga="Rp. 30.000" />
-        <Senam kategori="Senam" harga="One Time" />
-        <Boxing kategori="Boxing Muaythai" harga="Per Sesi" />
-      </div>
+    <section className=" bg-gray-200 p-16 flex justify-center">
+      <img src={priceList} alt="daftar harga drp fitness gym cibitung" className="md:w-[42.5%] w-[95%]"/>
     </section>
   );
 };

@@ -15,7 +15,7 @@ const Facility = () => {
           <div class="col-span-2 row-span-2 relative rounded-xl overflow-hidden">
             <img
               src={bench_press}
-              alt="Main Facility"
+              alt="mesin smitch bench press berguna untuk gerakan dada, back dan banyak variasinya"
               class="w-full h-full object-cover"
             />
             <div class="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black/80 to-transparent w-full">
@@ -29,7 +29,7 @@ const Facility = () => {
           <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden">
             <img
               src={allInOne}
-              alt="Machine Area"
+              alt="alat serba (gerakan) bisa sesuai variasi"
               class="w-full h-full object-cover"
             />
             <div class="absolute bottom-0 left-0 p-3 bg-gradient-to-t from-black/80 to-transparent w-full">
@@ -40,7 +40,7 @@ const Facility = () => {
           <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden">
             <img
               src={cardio_machine}
-              alt="Cardio Area"
+              alt="tempat cardio berupa alat treatmill di drp gym bekasi"
               class="w-full h-full object-cover"
             />
             <div class="absolute bottom-0 left-0 p-3 bg-gradient-to-t from-black/80 to-transparent w-full">
@@ -52,7 +52,7 @@ const Facility = () => {
           <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden">
             <img
               src={back_machine}
-              alt="Yoga Room"
+              alt="alat salah satu back di drp fitness gym cibitung"
               class="w-full h-full object-cover"
             />
             <div class="absolute bottom-0 left-0 p-3 bg-gradient-to-t from-black/80 to-transparent w-full">
@@ -63,7 +63,7 @@ const Facility = () => {
           <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden">
             <img
               src={dumble_area}
-              alt="Dumbbell Area"
+              alt="tempat Dumbell dengan berbagai macam berat"
               class="w-full h-full object-cover"
             />
             <div class="absolute bottom-0 left-0 p-3 bg-gradient-to-t from-black/80 to-transparent w-full">
