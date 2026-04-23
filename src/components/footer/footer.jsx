@@ -27,7 +27,7 @@ const Footer = () => {
 
             <div className="mt-8">
               <h1 className="lg:text-2xl font-bold">Jam buka </h1>
-              <h1 className="lg:text-lg">Setiap hari | 08:00 - 22:00 WIB</h1>
+              <h1 className="lg:text-lg">Setiap hari | 07:00 - 22:00 WIB</h1>
             </div>
             {/* nomor whatsapp  */}
             <div className="mt-8">
@@ -93,9 +93,9 @@ const Footer = () => {
         </section>
       </section>
       {/* copyrigth */}
-      <section className="w-full p-4">
+      <section className="bg-black text-white w-full p-8">
         <h1 className="text-center">
-          @All Copyright 2026, DRP Fitness GYM. All Rights Reserved.
+          &copy;All Copyright 2026, DRP Fitness GYM. All Rights Reserved.
         </h1>
       </section>
     </>

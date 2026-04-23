@@ -4,11 +4,11 @@ const CoachSection = () => {
   return (
     <>
       <section
-        className="md:flex lg:flex bg-black text-white p-5 pb-20 justify-center gap-8"
+        className="h-[120vh] md:flex lg:flex bg-black text-white pt-25 py-5 px-5 items-center justify-center gap-8"
         id="mentor"
       >
-        <section className="ml-10 md:w-2/5">
-          <h1 className="text-center md:text-left text-white leading-tight text-3xl md:text-7xl font-bold gradient-text">
+        <section className="ml-0 mb-8 lg:ml-5 lg:mb-0 md:w-2/5">
+          <h1 className="text-center md:text-left text-white text-3xl md:text-6xl font-bold gradient-text">
             Progress Bersama Mentor
           </h1>
           <p className="text-center md:text-left lg:text-left text-xl md:text-2xl leading-normal mt-5 ml-1.5">
@@ -18,11 +18,11 @@ const CoachSection = () => {
 
           <div className="p-2 mt-4 flex justify-center md:justify-start "> 
             <a href="#price">
-              <button className="p-3 bg-blue-600 w-[125px] font-bold rounded-2xl text-xl">Join</button>
+              <button className="p-3 bg-blue-600 w-[125px] font-bold rounded-xl text-lg lg:text-xl hover:cursor-pointer">Join</button>
             </a>
-          </div>
+          </div>  
         </section>
-        <section className="flex text-white p-5 justify-around w-full md:w-3/5 lg:w-3/5">
+        <section className="flex gap-2 text-white w-full justify-around md:w-3/5 lg:3/6">
           <div className="flex flex-col gap-5 items-center">
             <MentorProfile name="Aji" />
           </div>

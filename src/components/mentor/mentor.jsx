@@ -1,13 +1,13 @@
 import mentor_aji from "/image/aji-mentor.webp";
-import mentor_regi from "/image/regi-mentor.webp";
+import mentor_regi from "/image/regi2-mentor.jpeg";
 
 const MentorProfile = (props) => {
   return (
     <>
       <img
         src={props.name == "Aji" ? mentor_aji : mentor_regi}
-        alt="para mentor drp fitness gym cibitung"
-        className="w-[175px] md:w-[300px] lg:w-[300px] rounded-full"
+        alt="Para mentor drp fitness gym cibitung"
+        className="w-[250px] h-[225px] lg:w-[350px] lg:h-[350px] object-cover object-top rounded-full"
       />
       <h1 className="text-5xl font-bold">{props.name}</h1>
       <a

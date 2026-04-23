@@ -7,7 +7,7 @@ const LocationSection = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Text Info */}
         <div className="space-y-6 animate-fade-in">
-          <h2 className="text-4xl font-extrabold tracking-tight">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight">
             📍 Lokasi DRP Fitness
           </h2>
           <p className="text-lg text-gray-600">
