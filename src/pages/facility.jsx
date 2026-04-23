@@ -1,8 +1,12 @@
 import allInOne from "/image/facility/all-in-one.webp";
-import dumble_area from "/image/facility/dumblee.webp";
+// import dumble_area from "/image/facility/dumblee.webp";
 import bench_press from "/image/facility/bench-press.webp";
 import cardio_machine from "/image/facility/cardio.webp";
 import back_machine from "/image/facility/back.webp";
+import leg_machine from "/image/facility/leg.webp";
+import new_dumblee_area from "/image/facility/new-dubmblee.webp";
+import chest_area from "/image/facility/chest-area.webp";
+
 
 const Facility = () => {
   return (
@@ -10,7 +14,7 @@ const Facility = () => {
       <div class="max-w-7xl mx-auto">
         <h2 class="text-3xl md:text-5xl font-bold mb-12 text-center"> Fasilitas Gym</h2>
 
-        <div class="grid grid-cols-4 grid-rows-2 gap-4">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {/* <!-- Big image on the left --> */}
           <div class="col-span-2 row-span-2 relative rounded-xl overflow-hidden">
             <img
@@ -19,7 +23,7 @@ const Facility = () => {
               class="w-full h-full object-cover"
             />
             <div class="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black/80 to-transparent w-full">
-              <h3 class="md:text-lg font-semibold text-[10px]">
+              <h3 class="sm:text-lg md:text-lg lg:text-xl font-semibold">
                 Bench Press Smith Machine
               </h3>
             </div>
@@ -33,7 +37,7 @@ const Facility = () => {
               class="w-full h-full object-cover"
             />
             <div class="absolute bottom-0 left-0 p-3 bg-gradient-to-t from-black/80 to-transparent w-full">
-              <h3 class="md:text-lg font-semibold text-[7.5px]">Machine Zone</h3>
+              <h3 class="sm:text-lg md:text-lg lg:text-xl font-semibold ">Machine Zone</h3>
             </div>
           </div>
 
@@ -44,7 +48,18 @@ const Facility = () => {
               class="w-full h-full object-cover"
             />
             <div class="absolute bottom-0 left-0 p-3 bg-gradient-to-t from-black/80 to-transparent w-full">
-              <h3 class="lg:text-md md:text-sm font-semibold text-[7.5px]">Cardio Zone</h3>
+              <h3 class="sm:text-lg md:text-lg lg:text-xl font-semibold ">Cardio Zone</h3>
+            </div>
+          </div>
+
+          <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden">
+            <img
+              src={leg_machine}
+              alt="tempat cardio berupa alat treatmill di drp gym bekasi"
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute bottom-0 left-0 p-3 bg-gradient-to-t from-black/80 to-transparent w-full">
+              <h3 class="sm:text-lg md:text-lg lg:text-xl font-semibold">Leg Machine</h3>
             </div>
           </div>
 
@@ -56,18 +71,29 @@ const Facility = () => {
               class="w-full h-full object-cover"
             />
             <div class="absolute bottom-0 left-0 p-3 bg-gradient-to-t from-black/80 to-transparent w-full">
-              <h3 class="lg:text-md md:text-sm font-semibold text-[8px]">Back Machine</h3>
+              <h3 class="sm:text-lg md:text-lg lg:text-xl font-semibold">Back Machine</h3>
             </div>
           </div>
 
           <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden">
             <img
-              src={dumble_area}
+              src={chest_area}
+              alt="alat salah satu back di drp fitness gym cibitung"
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute bottom-0 left-0 p-3 bg-gradient-to-t from-black/80 to-transparent w-full">
+              <h3 class="sm:text-lg md:text-lg lg:text-xl font-semibold">Chest Area</h3>
+            </div>
+          </div>
+
+          <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden">
+            <img
+              src={new_dumblee_area}
               alt="tempat Dumbell dengan berbagai macam berat"
               class="w-full h-full object-cover"
             />
             <div class="absolute bottom-0 left-0 p-3 bg-gradient-to-t from-black/80 to-transparent w-full">
-              <h3 class="lg:text-md md:text-sm font-semibold text-[7.5px]">Weights & Dumbbells</h3>
+              <h3 class="sm:text-lg md:text-sm lg:text-lg font-semibold">Weights & Dumbbells</h3>
             </div>
           </div>
         </div>
