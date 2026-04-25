@@ -4,7 +4,7 @@ const HeroPage = () => {
       <section
         className="relative w-full h-screen flex items-center justify-center"
         style={{
-          backgroundImage: "url('/image/facility/background.webp')",
+          backgroundImage: "url('/image/background.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
