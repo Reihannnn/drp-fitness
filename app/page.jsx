@@ -287,8 +287,56 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="bg-white px-4 py-20">
+        <div className="mx-auto max-w-3xl">
+          <SectionHeading
+            dark
+            eyebrow="FAQ"
+            title="Pertanyaan yang Sering Ditanyakan"
+            description="Informasi singkat sebelum kamu mulai latihan di DRP Fitness."
+          />
+          <div className="mt-10 space-y-4">
+            <details className="rounded-2xl bg-zinc-100 p-6 ring-1 ring-black/10">
+              <summary className="cursor-pointer font-semibold text-zinc-950">
+                Berapa harga Visit di DRP Fitness?
+              </summary>
+              <p className="mt-3 text-sm leading-relaxed text-zinc-600">
+                Visit pelajar Rp20.000 dan visit dewasa Rp30.000. Kamu bisa
+                menggunakan fasilitas gym untuk satu kali kunjungan.
+              </p>
+            </details>
+            <details className="rounded-2xl bg-zinc-100 p-6 ring-1 ring-black/10">
+              <summary className="cursor-pointer font-semibold text-zinc-950">
+                Berapa harga membership 1 bulan?
+              </summary>
+              <p className="mt-3 text-sm leading-relaxed text-zinc-600">
+                Membership 1 bulan tersedia dengan harga Rp155.000 per orang.
+              </p>
+            </details>
+            <details className="rounded-2xl bg-zinc-100 p-6 ring-1 ring-black/10">
+              <summary className="cursor-pointer font-semibold text-zinc-950">
+                Apakah tersedia Personal Trainer?
+              </summary>
+              <p className="mt-3 text-sm leading-relaxed text-zinc-600">
+                Tersedia paket PT Solo, Duo, dan Trio dengan pilihan 1, 8, 10,
+                atau 14 sesi. Detail harga tersedia di halaman harga.
+              </p>
+            </details>
+            <details className="rounded-2xl bg-zinc-100 p-6 ring-1 ring-black/10">
+              <summary className="cursor-pointer font-semibold text-zinc-950">
+                Kapan jam buka DRP Fitness?
+              </summary>
+              <p className="mt-3 text-sm leading-relaxed text-zinc-600">
+                DRP Fitness buka setiap hari dari pukul 07:00 sampai 22:00 WIB.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
-      <section className="bg-white px-4 py-16 text-zinc-950">
+      <section className="bg-zinc-950 px-4 py-16 text-white">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-display text-3xl font-bold uppercase md:text-4xl">
             Siap Mulai Hari Ini?
