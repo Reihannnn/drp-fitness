@@ -135,7 +135,7 @@ export default function Home() {
             title="Gym Lengkap, Siap Pakai"
             description="Zona latihan terpisah: beban, machine, cardio, dan dumbbell."
           />
-          <div className="mt-10 grid gap-5 sm:grid-cols-4">
+          <div className="mt-8 grid grid-cols-2 gap-3 sm:mt-10 sm:grid-cols-4 sm:gap-5">
             {facilities
               .filter((f) => !f.banner)
               .map((f, i) => (
