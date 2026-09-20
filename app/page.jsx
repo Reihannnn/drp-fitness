@@ -10,10 +10,8 @@ import {
 } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import FacilityCard from "@/components/FacilityCard";
-import PriceCard from "@/components/PriceCard";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import {
-  membershipPlans,
   facilities,
   trainers,
   memberPhotos,
@@ -50,6 +48,7 @@ const facilitySpans = [
   "sm:col-span-1",
   "sm:col-span-1",
   "sm:col-span-1",
+  "sm:col-span-1",  
   "sm:col-span-1",  
   "sm:col-span-1",  
 ];
@@ -108,25 +107,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* HARGA RINGKAS */}
+      {/* HARGA */}
       <section className="bg-zinc-950 px-4 py-20">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-3xl text-center">
           <SectionHeading
             eyebrow="Harga"
-            title="Pilih Paket Latihanmu"
-            description="Mulai dari Rp30.000 per kunjungan. Semua harga transparan, tanpa biaya tersembunyi."
+            title="Mulai Latihan Tanpa Bingung"
+            description="Visit, membership, senam, dan boxing atau muaythai dengan harga yang jelas dan mudah dipilih."
           />
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {membershipPlans.map((p) => (
-              <PriceCard key={p.name} {...p} />
-            ))}
-          </div>
-          <div className="mt-10 text-center">
+          <div className="mt-8">
             <Link
               href="/harga"
-              className="inline-flex items-center gap-2 font-semibold text-zinc-300 hover:text-white"
+              className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-zinc-950 transition hover:bg-zinc-200"
             >
-              Lihat semua harga: kelas & PT <ArrowRight size={18} />
+              Lihat Daftar Harga <ArrowRight size={18} />
             </Link>
           </div>
         </div>
@@ -285,7 +279,7 @@ export default function Home() {
                   width={300}
                   height={220}
                   loading="lazy"
-                  className={`h-48 w-full object-cover ${i === 3 ? "object-top" : "object-center"}`}
+                  className={`h-75 w-full object-cover ${i === 3 ? "object-top" : "object-center"}`}
                 />
               </div>
             ))}

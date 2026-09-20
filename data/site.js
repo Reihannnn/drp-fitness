@@ -1,61 +1,31 @@
-export const membershipPlans = [
+export const pricingPlans = [
   {
     name: "Visit",
-    price: "Rp30.000",
-    unit: "/ kunjungan",
-    features: [
-      "Bebas pakai semua alat gym",
-      "Akses 1 sesi kunjungan",
-      "Konsultasi ringan dengan instruktur",
+    options: [
+      { label: "Pelajar", price: "Rp20.000", unit: "/ visit" },
+      { label: "Dewasa", price: "Rp30.000", unit: "/ visit" },
     ],
   },
   {
-    name: "Member Solo",
-    price: "Rp155.000",
-    unit: "/ bulan",
-    popular: true,
-    features: [
-      "Akses full 1 bulan",
-      "Bebas pakai semua alat gym",
-      "Gabung komunitas yang solid & satu tujuan",
-    ],
-  },
-  {
-    name: "Member Squad",
-    price: "Rp520.000",
-    unit: "/ 4 orang / bulan",
-    features: [
-      "Akses full 1 bulan untuk 4 orang",
-      "Bebas pakai semua alat gym",
-      "Latihan bareng, lebih hemat & seru",
-    ],
-  },
-];
-
-export const classPlans = [
-  {
-    name: "Senam",
-    rows: [
-      { label: "Aerobik", price: "Rp20.000 / sesi" },
-      { label: "Salsa", price: "Rp25.000 / sesi" },
+    name: "1 Bulan",
+    options: [
+      { label: "Member", price: "Rp155.000", unit: "/ orang" },
     ],
   },
   {
-    name: "Boxing & Muaythai",
-    rows: [
-      { label: "1 sesi", price: "Rp60.000" },
-      { label: "4 sesi", price: "Rp200.000" },
-      { label: "8 sesi", price: "Rp380.000" },
+    name: "Senam",
+    options: [
+      { label: "Senam", price: "Rp20.000", unit: "/ visit" },
     ],
   },
-];
-
-export const ptPlans = [
-  { name: "PT Solo · 1 sesi", sessions: "1 pertemuan", price: "Rp50.000" },
-  { name: "PT Solo · 8 sesi", sessions: "8 pertemuan / bulan", price: "Rp368.000" },
-  { name: "PT Solo · 14 sesi", sessions: "14 pertemuan / bulan", price: "Rp588.000" },
-  { name: "PT Duo · 10 sesi", sessions: "10 pertemuan / bulan, berdua", price: "Rp650.000" },
-  { name: "PT Trio · 10 sesi", sessions: "10 pertemuan / bulan, bertiga", price: "Rp1.000.000" },
+  {
+    name: "Boxing / Muaythai",
+    options: [
+      { label: "1 Sesi", price: "Rp60.000", unit: "" },
+      { label: "4 Sesi", price: "Rp200.000", unit: "" },
+      { label: "8 Sesi", price: "Rp380.000", unit: "" },
+    ],
+  },
 ];
 
 export const facilities = [
@@ -88,7 +58,6 @@ export const facilities = [
     src: "/image/facility/chest-area.webp",
     title: "Chest Area",
     desc: "Zona dada dengan dumbbell & bench lengkap.",
-    banner: true,
   },
   {
     src: "/image/facility/new-dubmblee.webp",
