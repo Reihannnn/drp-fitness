@@ -1,4 +1,4 @@
-import { MessageCircle } from "lucide-react";
+import Image from "next/image";
 import { waLink } from "./WhatsAppCTA";
 
 export default function FloatingWhatsApp() {
@@ -9,9 +9,15 @@ export default function FloatingWhatsApp() {
       rel="noopener noreferrer"
       aria-label="Chat WhatsApp DRP Fitness"
       title="Chat WhatsApp"
-      className="fixed bottom-5 right-5 z-50 rounded-full bg-white p-4 text-zinc-950 shadow-2xl ring-1 ring-black/10 transition hover:scale-105"
+      className="fixed bottom-5 right-5 z-50 transition hover:scale-105"
     >
-      <MessageCircle size={26} />
+      <Image
+        src="/image/whatsapp-logo.png"
+        alt="Chat WhatsApp DRP Fitness"
+        width={56}
+        height={56}
+        className="h-14 w-14 drop-shadow-xl"
+      />
     </a>
   );
 }
