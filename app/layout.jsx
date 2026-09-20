@@ -39,6 +39,10 @@ export const metadata = {
   },
   twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true },
+  icons: {
+    icon: "/image/drp_logo.webp",
+    apple: "/image/drp_logo.webp",
+  },
 };
 
 const jsonLd = {
@@ -77,6 +81,7 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <Footer />
         <FloatingWhatsApp />
+        {/* <FloatingWhatsApp /> */}
         <Analytics />
         <SpeedInsights />
       </body>

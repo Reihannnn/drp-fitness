@@ -1,10 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Dumbbell, Users, MapPin } from "lucide-react";
+import {
+  ArrowRight,
+  Dumbbell,
+  Users,
+  MapPin,
+  Phone,
+  Clock,
+} from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import PriceCard from "@/components/PriceCard";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
-import { membershipPlans, facilities, trainers, memberPhotos } from "@/data/site";
+import {
+  membershipPlans,
+  facilities,
+  trainers,
+  memberPhotos,
+  siteInfo,
+} from "@/data/site";
 
 export const metadata = {
   title: "Gym & Personal Trainer di Cibitung, Bekasi",
@@ -67,16 +80,18 @@ export default function Home() {
       </section>
 
       {/* HIGHLIGHTS */}
-      <section className="bg-zinc-950 px-4 py-16">
+      <section className="bg-white px-4 py-16">
         <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-3">
           {highlights.map((h) => (
             <div
               key={h.title}
-              className="rounded-2xl bg-zinc-900 p-6 ring-1 ring-white/10"
+              className="rounded-2xl bg-zinc-100 p-6 ring-1 ring-black/10"
             >
-              <h.icon size={28} className="text-zinc-300" />
-              <h2 className="mt-4 text-lg font-bold text-white">{h.title}</h2>
-              <p className="mt-2 text-sm text-zinc-300">{h.desc}</p>
+              <h.icon size={28} className="text-zinc-900" />
+              <h2 className="mt-4 text-lg font-bold text-zinc-950">
+                {h.title}
+              </h2>
+              <p className="mt-2 text-sm text-zinc-600">{h.desc}</p>
             </div>
           ))}
         </div>
@@ -107,9 +122,10 @@ export default function Home() {
       </section>
 
       {/* FASILITAS RINGKAS */}
-      <section className="bg-zinc-900 px-4 py-20">
+      <section className="bg-white px-4 py-20">
         <div className="mx-auto max-w-7xl">
           <SectionHeading
+            dark
             eyebrow="Fasilitas"
             title="Gym Lengkap, Siap Pakai"
             description="Zona latihan terpisah: beban, machine, cardio, dan dumbbell."
@@ -137,7 +153,7 @@ export default function Home() {
           <div className="mt-10 text-center">
             <Link
               href="/fasilitas"
-              className="inline-flex items-center gap-2 font-semibold text-zinc-300 hover:text-white"
+              className="inline-flex items-center gap-2 font-semibold text-zinc-700 hover:text-zinc-950"
             >
               Jelajahi semua fasilitas <ArrowRight size={18} />
             </Link>
@@ -190,8 +206,64 @@ export default function Home() {
         </div>
       </section>
 
+      {/* LOKASI RINGKAS */}
+      <section className="bg-white px-4 py-20">
+        <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2">
+          <div>
+            <SectionHeading
+              dark
+              align="left"
+              eyebrow="Lokasi"
+              title="Mampir & Rasakan Sendiri"
+              description="Strategis di Cibitung, mudah diakses dan dekat pusat kota."
+            />
+            <ul className="mt-8 space-y-4">
+              <li className="flex items-start gap-3">
+                <span className="rounded-full bg-zinc-950 p-2.5 text-white">
+                  <MapPin size={20} />
+                </span>
+                <p className="font-medium text-zinc-800">{siteInfo.address}</p>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="rounded-full bg-zinc-950 p-2.5 text-white">
+                  <Clock size={20} />
+                </span>
+                <p className="font-medium text-zinc-800">{siteInfo.hours}</p>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="rounded-full bg-zinc-950 p-2.5 text-white">
+                  <Phone size={20} />
+                </span>
+                <p className="font-medium text-zinc-800">{siteInfo.phone}</p>
+              </li>
+            </ul>
+            <div className="mt-8">
+              <Link
+                href="/lokasi"
+                className="inline-flex items-center gap-2 rounded-full bg-zinc-950 px-6 py-3 font-semibold text-white transition hover:bg-zinc-800"
+              >
+                Lihat Lokasi & Rute <ArrowRight size={18} />
+              </Link>
+            </div>
+          </div>
+          <div className="overflow-hidden rounded-2xl shadow-xl ring-1 ring-black/10">
+            <iframe
+              title="Peta lokasi DRP Fitness Gym Cibitung"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4716.454298002332!2d107.0825477195417!3d-6.257208341740215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698f893e750471%3A0x6a466b1065a84b7c!2sDRP%20GYM!5e0!3m2!1sen!2sid!4v1746668832571!5m2!1sen!2sid"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="h-[400px] w-full"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* MEMBER */}
-      <section className="bg-zinc-900 px-4 py-20">
+      <section className="bg-zinc-950 px-4 py-20">
         <div className="mx-auto max-w-7xl">
           <SectionHeading
             eyebrow="Komunitas"
@@ -219,7 +291,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="border-t border-white/10 bg-zinc-900 px-4 py-16 text-white">
+      <section className="bg-white px-4 py-16 text-zinc-950">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-display text-3xl font-bold uppercase md:text-4xl">
             Siap Mulai Hari Ini?
@@ -232,7 +304,7 @@ export default function Home() {
             <WhatsAppCTA
               message="Halo DRP Fitness! Saya mau tanya-tanya dulu sebelum join."
               label="Chat Admin"
-              variant="primary"
+              variant="dark"
             />
           </div>
         </div>

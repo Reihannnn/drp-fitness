@@ -1,6 +1,7 @@
 import { MapPin, Phone, Clock } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
+import { siteInfo } from "@/data/site";
 
 export const metadata = {
   title: "Lokasi & Jam Buka",
@@ -9,14 +10,9 @@ export const metadata = {
 };
 
 const info = [
-  {
-    icon: MapPin,
-    label: "Alamat",
-    value:
-      "Perumahan GramaPuri Tamansari No. 14 cc, RW.37, Wanasari, Kec. Cibitung, Kabupaten Bekasi, Jawa Barat 17520",
-  },
-  { icon: Phone, label: "Telepon / WA", value: "+62 813-8433-4250" },
-  { icon: Clock, label: "Jam buka", value: "Setiap hari, 07:00 – 22:00 WIB" },
+  { icon: MapPin, label: "Alamat", value: siteInfo.address },
+  { icon: Phone, label: "Telepon / WA", value: siteInfo.phone },
+  { icon: Clock, label: "Jam buka", value: siteInfo.hours },
 ];
 
 export default function LokasiPage() {
@@ -49,7 +45,7 @@ export default function LokasiPage() {
           </ul>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
-              href="https://www.google.com/maps/place/DRP+GYM/@-6.2572083,107.0825477,16.75z/data=!4m6!3m5!1s0x2e698f893e750471:0x6a466b1065a84b7c!8m2!3d-6.2564664!4d107.0827773!16s%2Fg%2F11pvp0ftl0?entry=ttu"
+              href={siteInfo.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-zinc-950 px-6 py-3 font-semibold text-white transition hover:bg-zinc-800"

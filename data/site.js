@@ -118,3 +118,12 @@ export const memberPhotos = Array.from(
   { length: 8 },
   (_, i) => `/image/member/member${i + 1}.webp`
 );
+
+export const siteInfo = {
+  address:
+    "Perumahan GramaPuri Tamansari No. 14 cc, RW.37, Wanasari, Kec. Cibitung, Kabupaten Bekasi, Jawa Barat 17520",
+  phone: "+62 813-8433-4250",
+  hours: "Setiap hari, 07:00 – 22:00 WIB",
+  mapsUrl:
+    "https://www.google.com/maps/place/DRP+GYM/@-6.2572083,107.0825477,16.75z/data=!4m6!3m5!1s0x2e698f893e750471:0x6a466b1065a84b7c!8m2!3d-6.2564664!4d107.0827773!16s%2Fg%2F11pvp0ftl0?entry=ttu",
+};
