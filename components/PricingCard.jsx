@@ -1,11 +1,12 @@
 import WhatsAppCTA from "./WhatsAppCTA";
 
-export default function PricingCard({ name, options }) {
+export default function PricingCard({ name, description, options }) {
   return (
     <article className="flex h-full flex-col rounded-2xl bg-zinc-900 p-6 ring-1 ring-white/10 md:p-8">
       <h2 className="font-display text-2xl font-bold uppercase text-white md:text-3xl">
         {name}
       </h2>
+      <p className="mt-2 text-sm leading-relaxed text-zinc-400">{description}</p>
       <div className="mt-6 flex flex-1 flex-col gap-3">
         {options.map((option) => (
           <div

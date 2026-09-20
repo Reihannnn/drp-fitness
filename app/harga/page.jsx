@@ -1,11 +1,12 @@
 import SectionHeading from "@/components/SectionHeading";
 import PricingCard from "@/components/PricingCard";
-import { pricingPlans } from "@/data/site";
+import PersonalTrainerCard from "@/components/PersonalTrainerCard";
+import { pricingPlans, personalTrainerPlans } from "@/data/site";
 
 export const metadata = {
   title: "Harga Visit, Member, Senam & Boxing",
   description:
-    "Daftar harga DRP Fitness Cibitung: Visit pelajar Rp20.000, dewasa Rp30.000, membership 1 bulan Rp155.000 per orang, senam Rp20.000 per visit, dan boxing atau muaythai mulai Rp60.000.",
+    "Daftar harga DRP Fitness Cibitung: Visit, membership 1 bulan, senam, boxing, muaythai, dan personal trainer solo, duo, atau trio.",
 };
 
 const faqs = [
@@ -42,6 +43,21 @@ export default function HargaPage() {
           {pricingPlans.map((plan) => (
             <PricingCard key={plan.name} {...plan} />
           ))}
+        </div>
+      </section>
+
+      <section className="bg-zinc-950 px-4 pb-16 pt-4">
+        <div className="mx-auto max-w-7xl">
+          <SectionHeading
+            eyebrow="Personal Trainer"
+            title="List Harga Personal Trainer"
+            description="Pilih jumlah sesi dan format latihan yang paling sesuai dengan targetmu."
+          />
+          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {personalTrainerPlans.map((plan) => (
+              <PersonalTrainerCard key={`${plan.category}-${plan.sessions}`} {...plan} />
+            ))}
+          </div>
         </div>
       </section>
 

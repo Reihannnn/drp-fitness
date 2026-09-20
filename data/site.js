@@ -1,6 +1,7 @@
 export const pricingPlans = [
   {
     name: "Visit",
+    description: "Akses latihan untuk satu kali kunjungan.",
     options: [
       { label: "Pelajar", price: "Rp20.000", unit: "/ visit" },
       { label: "Dewasa", price: "Rp30.000", unit: "/ visit" },
@@ -8,23 +9,59 @@ export const pricingPlans = [
   },
   {
     name: "1 Bulan",
+    description: "Akses membership gym selama satu bulan.",
     options: [
       { label: "Member", price: "Rp155.000", unit: "/ orang" },
     ],
   },
   {
     name: "Senam",
+    description: "Ikut sesi senam dengan instruktur.",
     options: [
       { label: "Senam", price: "Rp20.000", unit: "/ visit" },
     ],
   },
   {
     name: "Boxing / Muaythai",
+    description: "Pilihan sesi latihan combat sport sesuai kebutuhanmu.",
     options: [
       { label: "1 Sesi", price: "Rp60.000", unit: "" },
       { label: "4 Sesi", price: "Rp200.000", unit: "" },
       { label: "8 Sesi", price: "Rp380.000", unit: "" },
     ],
+  },
+];
+
+export const personalTrainerPlans = [
+  {
+    category: "PT (Solo)",
+    sessions: "1 sesi",
+    schedule: "Pertemuan dalam sehari",
+    price: "Rp50.000",
+  },
+  {
+    category: "PT (Solo)",
+    sessions: "8 sesi",
+    schedule: "Pertemuan dalam sebulan",
+    price: "Rp368.000",
+  },
+  {
+    category: "PT (Solo)",
+    sessions: "14 sesi",
+    schedule: "Pertemuan dalam sebulan",
+    price: "Rp588.000",
+  },
+  {
+    category: "Paket PT (Duo)",
+    sessions: "10 sesi",
+    schedule: "Pertemuan dalam sebulan",
+    price: "Rp650.000",
+  },
+  {
+    category: "Paket PT (Trio)",
+    sessions: "10 sesi",
+    schedule: "Pertemuan dalam sebulan",
+    price: "Rp1.000.000",
   },
 ];
 
