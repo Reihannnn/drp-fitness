@@ -21,7 +21,7 @@ export default function FacilityCard({
           {facility.title}
         </TitleTag>
         <p className="mt-1 text-sm leading-snug text-zinc-300">
-          {/* {facility.desc} */}
+          {facility.desc}
         </p>
       </div>
     </article>

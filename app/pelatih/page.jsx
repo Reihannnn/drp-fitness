@@ -12,7 +12,8 @@ export const metadata = {
 
 export default function PelatihPage() {
   return (
-    <section className="bg-zinc-950 px-4 py-16">
+    <>
+    <section className="bg-zinc-950 px-4 pb-4 pt-16">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           as="h1"
@@ -20,7 +21,11 @@ export default function PelatihPage() {
           title="Progress Bersama Mentor"
           description="Kita nggak cuma angkat beban — kita angkat kepercayaan diri, konsistensi, dan standar hidup ke level baru."
         />
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
+      </div>
+    </section>
+    <section className="bg-zinc-950 px-4 py-12">
+      <div className="mx-auto max-w-7xl">
+        <div className="grid gap-6 md:grid-cols-2">
           {trainers.map((t) => (
             <article
               key={t.name}
@@ -62,5 +67,24 @@ export default function PelatihPage() {
         </div>
       </div>
     </section>
+
+    <section className="bg-white px-4 py-16">
+      <div className="mx-auto max-w-3xl text-center">
+        <SectionHeading
+          dark
+          eyebrow="Mulai"
+          title="Pilih Mentor, Mulai Progress"
+          description="Chat admin untuk jadwal sesi perdana — gratis konsultasi ringan dengan instruktur."
+        />
+        <div className="mt-8">
+          <WhatsAppCTA
+            message="Halo DRP Fitness! Saya mau mulai latihan dengan personal trainer."
+            label="Jadwalkan Sesi Perdana"
+            variant="dark"
+          />
+        </div>
+      </div>
+    </section>
+    </>
   );
 }

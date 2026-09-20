@@ -17,6 +17,7 @@ const info = [
 
 export default function LokasiPage() {
   return (
+    <>
     <section className="bg-white px-4 py-16 text-zinc-900 sm:px-6 lg:px-8">
       <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2">
         <div>
@@ -74,5 +75,22 @@ export default function LokasiPage() {
         </div>
       </div>
     </section>
+
+    <section className="bg-zinc-950 px-4 py-16">
+      <div className="mx-auto max-w-3xl text-center">
+        <SectionHeading
+          eyebrow="Kunjungan"
+          title="Sampai Jumpa di Gym"
+          description="Kunjungan pertama dibantu instruktur. Chat admin sebelum datang biar langsung dilayani."
+        />
+        <div className="mt-8">
+          <WhatsAppCTA
+            message="Halo DRP Fitness! Saya mau mampir ke gym hari ini."
+            label="Kabari Admin"
+          />
+        </div>
+      </div>
+    </section>
+    </>
   );
 }

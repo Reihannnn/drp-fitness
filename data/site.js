@@ -88,29 +88,23 @@ export const facilities = [
     src: "/image/facility/chest-area.webp",
     title: "Chest Area",
     desc: "Zona dada dengan dumbbell & bench lengkap.",
+    banner: true,
   },
   {
     src: "/image/facility/new-dubmblee.webp",
     title: "Weights & Dumbbells",
     desc: "Dumbbell berbagai pilihan berat.",
-  },
+  },  
 ];
 
 export const trainers = [
   {
     name: "Aji",
     photo: "/image/aji4-mentor.webp",
-    role: "Head Coach & Personal Trainer",
+    role: "Personal Trainer",
     instagram: "https://www.instagram.com/bangjiwww/",
     desc: "Bantu kamu bangun kekuatan, disiplin, dan konsistensi dari sesi pertama.",
-  },
-  {
-    name: "Regi",
-    photo: "/image/regi2-mentor.webp",
-    role: "Personal Trainer",
-    instagram: "https://www.instagram.com/atoy.oo/",
-    desc: "Dampingi progres latihanmu dengan program yang terarah dan aman.",
-  },
+  }
 ];
 
 export const memberPhotos = Array.from(

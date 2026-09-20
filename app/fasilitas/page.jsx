@@ -10,32 +10,50 @@ export const metadata = {
 };
 
 export default function FasilitasPage() {
+  const portrait = facilities.filter((f) => !f.banner);
+  const banner = facilities.filter((f) => f.banner);
   return (
-    <section className="bg-zinc-950 px-4 py-16">
-      <div className="mx-auto max-w-7xl">
-        <SectionHeading
-          as="h1"
-          eyebrow="Fasilitas"
-          title="Fasilitas Gym"
-          description="Tujuh zona latihan untuk semua target: strength, hypertrophy, dan cardio."
-        />
-        <div className="mt-12 grid grid-cols-2 gap-4 lg:grid-cols-4">
-          {facilities.map((f) => (
-            <FacilityCard key={f.title} facility={f} TitleTag="h2" />
-          ))}
+    <>
+      <section className="bg-zinc-950 px-4 pb-4 pt-16">
+        <div className="mx-auto max-w-7xl">
+          <SectionHeading
+            as="h1"
+            eyebrow="Fasilitas"
+            title="Fasilitas Gym"
+            description="Tujuh zona latihan untuk semua target: strength, hypertrophy, dan cardio."
+          />
         </div>
-        <div className="mt-12 text-center">
-          <p className="text-zinc-300">
-            Mau coba alatnya langsung? Kunjungan pertama dibantu instruktur.
-          </p>
-          <div className="mt-4">
-            <WhatsAppCTA
-              message="Halo DRP Fitness! Saya mau coba visit dan lihat fasilitasnya."
-              label="Coba Visit Rp30rb"
-            />
+      </section>
+
+      <section className="bg-zinc-950 px-4 py-12">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+            {portrait.map((f) => (
+              <FacilityCard key={f.title} facility={f} TitleTag="h2" />
+            ))}
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section className="bg-white px-4 py-16">
+        <div className="mx-auto max-w-5xl">
+          {banner.map((f) => (
+            <FacilityCard key={f.title} facility={f} TitleTag="h2" />
+          ))}
+          <div className="mt-10 text-center">
+            <p className="text-zinc-600">
+              Mau coba alatnya langsung? Kunjungan pertama dibantu instruktur.
+            </p>
+            <div className="mt-4">
+              <WhatsAppCTA
+                message="Halo DRP Fitness! Saya mau coba visit dan lihat fasilitasnya."
+                label="Coba Visit Rp30rb"
+                variant="dark"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

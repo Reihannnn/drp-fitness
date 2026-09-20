@@ -53,26 +53,26 @@ export default function HargaPage() {
       </section>
 
       {/* KELAS */}
-      <section className="bg-zinc-900 px-4 py-16">
+      <section className="bg-white px-4 py-16">
         <div className="mx-auto max-w-7xl">
-          <h2 className="font-display text-2xl font-bold uppercase text-white md:text-3xl">
+          <h2 className="font-display text-2xl font-bold uppercase text-zinc-950 md:text-3xl">
             Kelas Senam, Boxing & Muaythai
           </h2>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             {classPlans.map((c) => (
               <article
                 key={c.name}
-                className="rounded-2xl bg-zinc-950 p-8 ring-1 ring-white/10"
+                className="rounded-2xl bg-zinc-100 p-8 ring-1 ring-black/10"
               >
-                <h3 className="text-xl font-bold text-white">{c.name}</h3>
+                <h3 className="text-xl font-bold text-zinc-950">{c.name}</h3>
                 <dl className="mt-4 space-y-3">
                   {c.rows.map((r) => (
                     <div
                       key={r.label}
-                      className="flex items-center justify-between gap-4 border-b border-white/10 pb-3"
+                      className="flex items-center justify-between gap-4 border-b border-black/10 pb-3"
                     >
-                      <dt className="text-zinc-300">{r.label}</dt>
-                      <dd className="font-bold text-white">{r.price}</dd>
+                      <dt className="text-zinc-600">{r.label}</dt>
+                      <dd className="font-bold text-zinc-950">{r.price}</dd>
                     </div>
                   ))}
                 </dl>
@@ -80,6 +80,7 @@ export default function HargaPage() {
                   <WhatsAppCTA
                     message={`Halo DRP Fitness! Saya tertarik ikut kelas ${c.name}.`}
                     label={`Daftar ${c.name}`}
+                    variant="dark"
                   />
                 </div>
               </article>
@@ -122,19 +123,19 @@ export default function HargaPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-zinc-900 px-4 py-16">
+      <section className="bg-white px-4 py-16">
         <div className="mx-auto max-w-3xl">
-          <SectionHeading eyebrow="FAQ" title="Sering Ditanyakan" />
+          <SectionHeading dark eyebrow="FAQ" title="Sering Ditanyakan" />
           <div className="mt-10 space-y-4">
             {faqs.map((f) => (
               <details
                 key={f.q}
-                className="rounded-2xl bg-zinc-950 p-6 ring-1 ring-white/10"
+                className="rounded-2xl bg-zinc-100 p-6 ring-1 ring-black/10"
               >
-                <summary className="cursor-pointer font-semibold text-white">
+                <summary className="cursor-pointer font-semibold text-zinc-950">
                   {f.q}
                 </summary>
-                <p className="mt-3 text-sm leading-relaxed text-zinc-300">
+                <p className="mt-3 text-sm leading-relaxed text-zinc-600">
                   {f.a}
                 </p>
               </details>
