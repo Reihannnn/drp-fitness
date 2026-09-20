@@ -9,6 +9,7 @@ import {
   Clock,
 } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
+import FacilityCard from "@/components/FacilityCard";
 import PriceCard from "@/components/PriceCard";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import {
@@ -130,32 +131,27 @@ export default function Home() {
             title="Gym Lengkap, Siap Pakai"
             description="Zona latihan terpisah: beban, machine, cardio, dan dumbbell."
           />
-          <div className="mt-12 grid grid-cols-2 gap-4 lg:grid-cols-4">
-            {facilities.slice(0, 4).map((f) => (
-              <article
+          <div className="mt-12 grid grid-cols-2 gap-4 lg:grid-cols-6">
+            {facilities.slice(0, 5).map((f, i) => (
+              <FacilityCard
                 key={f.title}
-                className="relative overflow-hidden rounded-2xl"
-              >
-                <Image
-                  src={f.src}
-                  alt={`${f.title} di DRP Fitness Gym Cibitung`}
-                  width={400}
-                  height={300}
-                  loading="lazy"
-                  className="h-56 w-full object-cover"
-                />
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4">
-                  <h3 className="font-semibold text-white">{f.title}</h3>
-                </div>
-              </article>
+                facility={f}
+                imgClass="h-56 lg:h-64"
+                className={
+                  i < 2 ? "lg:col-span-3" : "lg:col-span-2"
+                }
+              />
             ))}
-          </div>
-          <div className="mt-10 text-center">
             <Link
               href="/fasilitas"
-              className="inline-flex items-center gap-2 font-semibold text-zinc-700 hover:text-zinc-950"
+              className="flex min-h-40 flex-col items-center justify-center gap-2 rounded-2xl bg-zinc-950 p-6 text-center text-white transition hover:bg-zinc-800"
             >
-              Jelajahi semua fasilitas <ArrowRight size={18} />
+              <span className="font-display text-2xl font-bold uppercase">
+                +2 Zona Lagi
+              </span>
+              <span className="inline-flex items-center gap-2 text-sm font-semibold text-zinc-300">
+                Lihat semua fasilitas <ArrowRight size={16} />
+              </span>
             </Link>
           </div>
         </div>

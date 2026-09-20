@@ -63,7 +63,6 @@ export const facilities = [
     src: "/image/facility/bench-press.webp",
     title: "Bench Press Smith Machine",
     desc: "Untuk gerakan dada, punggung, dan banyak variasinya.",
-    span: true,
   },
   {
     src: "/image/facility/all-in-one.webp",
