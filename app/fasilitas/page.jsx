@@ -33,15 +33,7 @@ export default function FasilitasPage() {
             ))}
           </div>
         </div>
-      </section>
-
-      <section className="bg-white px-4 py-16">
-        <div className="mx-auto max-w-5xl">
-          {banner.map((f) => (
-            <FacilityCard key={f.title} facility={f} TitleTag="h2" />
-          ))}
-        </div>
-      </section>
+      </section>      
     </>
   );
 }

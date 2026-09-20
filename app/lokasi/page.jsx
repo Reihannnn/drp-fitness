@@ -79,7 +79,7 @@ export default function LokasiPage() {
     <section className="bg-zinc-950 px-4 py-16">
       <div className="mx-auto max-w-3xl text-center">
         <SectionHeading
-          eyebrow="Kunjungan"
+          eyebrow=""
           title="Sampai Jumpa di Gym"
           description="Kunjungan pertama dibantu instruktur. Chat admin sebelum datang biar langsung dilayani."
         />
