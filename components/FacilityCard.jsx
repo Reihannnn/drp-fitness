@@ -3,7 +3,6 @@ import Image from "next/image";
 export default function FacilityCard({
   facility,
   className = "",
-  imgClass = "h-52 lg:h-64",
   TitleTag = "h3",
 }) {
   return (
@@ -11,18 +10,18 @@ export default function FacilityCard({
       <Image
         src={facility.src}
         alt={`${facility.title} di DRP Fitness Gym Cibitung — ${facility.desc}`}
-        width={600}
-        height={450}
+        width={800}
+        height={600}
         loading="lazy"
-        sizes="(max-width: 1024px) 50vw, 25vw"
-        className={`w-full object-cover ${imgClass}`}
+        sizes="(max-width: 640px) 100vw, 50vw"
+        className="h-auto w-full"
       />
       <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent p-4 pt-12">
         <TitleTag className="font-semibold text-white">
           {facility.title}
         </TitleTag>
         <p className="mt-1 text-sm leading-snug text-zinc-300">
-          {facility.desc}
+          {/* {facility.desc} */}
         </p>
       </div>
     </article>

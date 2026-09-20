@@ -123,36 +123,18 @@ export default function Home() {
       </section>
 
       {/* FASILITAS RINGKAS */}
-      <section className="bg-white px-4 py-20">
-        <div className="mx-auto max-w-7xl">
+      <section className="flex min-h-screen flex-col justify-center bg-white px-4 py-16">
+        <div className="mx-auto w-full max-w-7xl">
           <SectionHeading
             dark
             eyebrow="Fasilitas"
             title="Gym Lengkap, Siap Pakai"
             description="Zona latihan terpisah: beban, machine, cardio, dan dumbbell."
           />
-          <div className="mt-12 grid grid-cols-2 gap-4 lg:grid-cols-6">
-            {facilities.slice(0, 5).map((f, i) => (
-              <FacilityCard
-                key={f.title}
-                facility={f}
-                imgClass="h-56 lg:h-64"
-                className={
-                  i < 2 ? "lg:col-span-3" : "lg:col-span-2"
-                }
-              />
+          <div className="mt-10 grid gap-5 sm:grid-cols-3">
+            {facilities.slice(0, 6).map((f) => (
+              <FacilityCard key={f.title} facility={f} />
             ))}
-            <Link
-              href="/fasilitas"
-              className="flex min-h-40 flex-col items-center justify-center gap-2 rounded-2xl bg-zinc-950 p-6 text-center text-white transition hover:bg-zinc-800"
-            >
-              <span className="font-display text-2xl font-bold uppercase">
-                +2 Zona Lagi
-              </span>
-              <span className="inline-flex items-center gap-2 text-sm font-semibold text-zinc-300">
-                Lihat semua fasilitas <ArrowRight size={16} />
-              </span>
-            </Link>
           </div>
         </div>
       </section>
