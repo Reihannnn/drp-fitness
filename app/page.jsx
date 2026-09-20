@@ -4,7 +4,7 @@ import { ArrowRight, Dumbbell, Users, MapPin } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import PriceCard from "@/components/PriceCard";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
-import { membershipPlans, facilities, trainers } from "@/data/site";
+import { membershipPlans, facilities, trainers, memberPhotos } from "@/data/site";
 
 export const metadata = {
   title: "Gym & Personal Trainer di Cibitung, Bekasi",
@@ -185,6 +185,34 @@ export default function Home() {
                   <p className="text-sm text-zinc-400">{t.role}</p>
                 </div>
               </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* MEMBER */}
+      <section className="bg-zinc-900 px-4 py-20">
+        <div className="mx-auto max-w-7xl">
+          <SectionHeading
+            eyebrow="Komunitas"
+            title="Para Member Kami"
+            description="Latihan bareng komunitas yang solid dan saling support."
+          />
+          <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
+            {memberPhotos.map((src, i) => (
+              <div
+                key={src}
+                className="overflow-hidden rounded-2xl ring-1 ring-white/10"
+              >
+                <Image
+                  src={src}
+                  alt={`Member DRP Fitness Cibitung ${i + 1}`}
+                  width={300}
+                  height={220}
+                  loading="lazy"
+                  className={`h-48 w-full object-cover ${i === 3 ? "object-top" : "object-center"}`}
+                />
+              </div>
             ))}
           </div>
         </div>
