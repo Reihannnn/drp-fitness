@@ -40,18 +40,6 @@ export default function FasilitasPage() {
           {banner.map((f) => (
             <FacilityCard key={f.title} facility={f} TitleTag="h2" />
           ))}
-          <div className="mt-10 text-center">
-            <p className="text-zinc-600">
-              Mau coba alatnya langsung? Kunjungan pertama dibantu instruktur.
-            </p>
-            <div className="mt-4">
-              <WhatsAppCTA
-                message="Halo DRP Fitness! Saya mau coba visit dan lihat fasilitasnya."
-                label="Coba Visit Rp30rb"
-                variant="dark"
-              />
-            </div>
-          </div>
         </div>
       </section>
     </>
