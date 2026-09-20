@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import "./globals.css";
 
 const sans = Plus_Jakarta_Sans({ subsets: ["latin"], display: "swap" });
@@ -75,6 +76,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <FloatingWhatsApp />
         <Analytics />
         <SpeedInsights />
       </body>

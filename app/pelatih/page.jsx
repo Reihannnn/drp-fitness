@@ -38,7 +38,7 @@ export default function PelatihPage() {
                 <h2 className="font-display text-3xl font-bold text-white">
                   {t.name}
                 </h2>
-                <p className="mt-1 text-sm font-semibold uppercase tracking-wide text-yellow-400">
+                <p className="mt-1 text-sm font-semibold uppercase tracking-wide text-zinc-300">
                   {t.role}
                 </p>
                 <p className="mt-3 text-zinc-300">{t.desc}</p>

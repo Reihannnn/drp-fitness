@@ -44,7 +44,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/70" />
         <div className="relative z-10 mx-auto max-w-3xl px-4 text-center">
-          <p className="mb-4 text-sm font-bold uppercase tracking-widest text-yellow-400">
+          <p className="mb-4 text-sm font-bold uppercase tracking-widest text-zinc-300">
             Gym · Personal Trainer · Kelas
           </p>
           <h1 className="font-display text-4xl font-bold uppercase leading-tight text-white md:text-6xl">
@@ -74,7 +74,7 @@ export default function Home() {
               key={h.title}
               className="rounded-2xl bg-zinc-900 p-6 ring-1 ring-white/10"
             >
-              <h.icon size={28} className="text-yellow-400" />
+              <h.icon size={28} className="text-zinc-300" />
               <h2 className="mt-4 text-lg font-bold text-white">{h.title}</h2>
               <p className="mt-2 text-sm text-zinc-300">{h.desc}</p>
             </div>
@@ -98,7 +98,7 @@ export default function Home() {
           <div className="mt-10 text-center">
             <Link
               href="/harga"
-              className="inline-flex items-center gap-2 font-semibold text-yellow-400 hover:text-yellow-300"
+              className="inline-flex items-center gap-2 font-semibold text-zinc-300 hover:text-white"
             >
               Lihat semua harga: kelas & PT <ArrowRight size={18} />
             </Link>
@@ -137,7 +137,7 @@ export default function Home() {
           <div className="mt-10 text-center">
             <Link
               href="/fasilitas"
-              className="inline-flex items-center gap-2 font-semibold text-yellow-400 hover:text-yellow-300"
+              className="inline-flex items-center gap-2 font-semibold text-zinc-300 hover:text-white"
             >
               Jelajahi semua fasilitas <ArrowRight size={18} />
             </Link>
@@ -158,7 +158,7 @@ export default function Home() {
             <div className="mt-8">
               <Link
                 href="/pelatih"
-                className="inline-flex items-center gap-2 rounded-full bg-yellow-400 px-6 py-3 font-semibold text-zinc-950 transition hover:bg-yellow-300"
+                className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-zinc-950 transition hover:bg-zinc-200"
               >
                 Kenalan dengan Pelatih <ArrowRight size={18} />
               </Link>
@@ -219,7 +219,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="bg-yellow-400 px-4 py-16 text-zinc-950">
+      <section className="border-t border-white/10 bg-zinc-900 px-4 py-16 text-white">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-display text-3xl font-bold uppercase md:text-4xl">
             Siap Mulai Hari Ini?
@@ -232,7 +232,7 @@ export default function Home() {
             <WhatsAppCTA
               message="Halo DRP Fitness! Saya mau tanya-tanya dulu sebelum join."
               label="Chat Admin"
-              variant="secondary"
+              variant="primary"
             />
           </div>
         </div>

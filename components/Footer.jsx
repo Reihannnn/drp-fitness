@@ -30,7 +30,7 @@ export default function Footer() {
               <p className="font-bold lg:text-xl">Whatsapp</p>
               <a
                 href="https://wa.me/6281384334250"
-                className="text-zinc-300 transition hover:text-yellow-400 lg:text-lg"
+                className="text-zinc-300 transition hover:text-white lg:text-lg"
               >
                 +62 813-8433-4250
               </a>
@@ -43,7 +43,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/lokasi"
-                  className="flex items-center gap-2 transition hover:text-yellow-400"
+                  className="flex items-center gap-2 transition hover:text-white"
                 >
                   <MapPin size={18} /> Lokasi
                 </Link>
@@ -51,7 +51,7 @@ export default function Footer() {
               <li>
                 <a
                   href="https://wa.me/6281384334250"
-                  className="flex items-center gap-2 transition hover:text-yellow-400"
+                  className="flex items-center gap-2 transition hover:text-white"
                 >
                   <MessageCircle size={18} /> Hubungi kami
                 </a>
@@ -63,22 +63,22 @@ export default function Footer() {
             <h2 className="text-xl font-bold">Program</h2>
             <ul className="mt-4 space-y-3 text-zinc-300">
               <li>
-                <Link href="/harga" className="transition hover:text-yellow-400">
+                <Link href="/harga" className="transition hover:text-white">
                   Membership
                 </Link>
               </li>
               <li>
-                <Link href="/harga" className="transition hover:text-yellow-400">
+                <Link href="/harga" className="transition hover:text-white">
                   Senam
                 </Link>
               </li>
               <li>
-                <Link href="/harga" className="transition hover:text-yellow-400">
+                <Link href="/harga" className="transition hover:text-white">
                   Boxing & Muaythai
                 </Link>
               </li>
               <li>
-                <Link href="/harga" className="transition hover:text-yellow-400">
+                <Link href="/harga" className="transition hover:text-white">
                   Personal Trainer (Gym)
                 </Link>
               </li>
@@ -91,14 +91,14 @@ export default function Footer() {
               <a
                 href="https://www.instagram.com/drpfitness21/"
                 aria-label="Instagram DRP Fitness"
-                className="rounded-full border border-zinc-700 p-2.5 transition hover:border-yellow-400 hover:text-yellow-400"
+                className="rounded-full border border-zinc-700 p-2.5 transition hover:border-white hover:text-white"
               >
                 <Instagram size={22} />
               </a>
               <a
                 href="https://www.tiktok.com/@drpfitness21"
                 aria-label="TikTok DRP Fitness"
-                className="rounded-full border border-zinc-700 p-2.5 transition hover:border-yellow-400 hover:text-yellow-400"
+                className="rounded-full border border-zinc-700 p-2.5 transition hover:border-white hover:text-white"
               >
                 <Music2 size={22} />
               </a>

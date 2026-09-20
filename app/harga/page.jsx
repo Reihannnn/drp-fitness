@@ -72,7 +72,7 @@ export default function HargaPage() {
                       className="flex items-center justify-between gap-4 border-b border-white/10 pb-3"
                     >
                       <dt className="text-zinc-300">{r.label}</dt>
-                      <dd className="font-bold text-yellow-400">{r.price}</dd>
+                      <dd className="font-bold text-white">{r.price}</dd>
                     </div>
                   ))}
                 </dl>
@@ -106,7 +106,7 @@ export default function HargaPage() {
               >
                 <h3 className="font-bold text-white">{p.name}</h3>
                 <p className="mt-1 text-sm text-zinc-400">{p.sessions}</p>
-                <p className="mt-3 text-2xl font-extrabold text-yellow-400">
+                <p className="mt-3 text-2xl font-extrabold text-white">
                   {p.price}
                 </p>
                 <div className="mt-5">

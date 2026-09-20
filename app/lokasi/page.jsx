@@ -35,7 +35,7 @@ export default function LokasiPage() {
           <ul className="mt-8 space-y-5">
             {info.map((i) => (
               <li key={i.label} className="flex items-start gap-3">
-                <span className="rounded-full bg-zinc-950 p-2.5 text-yellow-400">
+                <span className="rounded-full bg-zinc-950 p-2.5 text-white">
                   <i.icon size={20} />
                 </span>
                 <div>

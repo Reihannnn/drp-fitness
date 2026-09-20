@@ -27,14 +27,14 @@ export default function Navbar() {
             className="h-[50px] w-[50px] rounded-full object-cover"
           />
           <span className="font-display text-xl font-bold tracking-wide text-white">
-            DRP <span className="text-yellow-400">FITNESS</span>
+            DRP <span className="text-zinc-400">FITNESS</span>
           </span>
         </Link>
 
         <ul className="hidden gap-10 text-lg font-medium text-white md:flex">
           {links.map((l) => (
             <li key={l.href}>
-              <Link href={l.href} className="transition hover:text-yellow-400">
+              <Link href={l.href} className="transition hover:text-zinc-400">
                 {l.label}
               </Link>
             </li>
@@ -57,7 +57,7 @@ export default function Navbar() {
               <Link
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="block transition hover:text-yellow-400"
+                className="block transition hover:text-zinc-400"
               >
                 {l.label}
               </Link>
