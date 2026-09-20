@@ -44,6 +44,16 @@ const highlights = [
   },
 ];
 
+// ponytail: pola span 6 kolom, tiap baris genap 6 (4+2, 2+4, 3+3)
+const facilitySpans = [
+  "sm:col-span-4",
+  "sm:col-span-2",
+  "sm:col-span-2",
+  "sm:col-span-4",
+  "sm:col-span-3",
+  "sm:col-span-3",
+];
+
 export default function Home() {
   return (
     <>
@@ -124,16 +134,20 @@ export default function Home() {
 
       {/* FASILITAS RINGKAS */}
       <section className="flex min-h-screen flex-col justify-center bg-white px-4 py-16">
-        <div className="mx-auto w-full max-w-7xl">
+        <div className="mx-auto w-full max-w-5xl">
           <SectionHeading
             dark
             eyebrow="Fasilitas"
             title="Gym Lengkap, Siap Pakai"
             description="Zona latihan terpisah: beban, machine, cardio, dan dumbbell."
           />
-          <div className="mt-10 grid gap-5 sm:grid-cols-3">
-            {facilities.slice(0, 6).map((f) => (
-              <FacilityCard key={f.title} facility={f} />
+          <div className="mt-10 grid gap-5 sm:grid-cols-6">
+            {facilities.slice(0, 6).map((f, i) => (
+              <FacilityCard
+                key={f.title}
+                facility={f}
+                className={facilitySpans[i]}
+              />
             ))}
           </div>
         </div>
