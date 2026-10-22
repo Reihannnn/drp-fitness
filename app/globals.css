@@ -18,3 +18,20 @@ body {
 .font-display {
   font-family: var(--font-display);
 }
+
+.ticker-track {
+  animation: ticker-scroll 28s linear infinite;
+}
+
+@keyframes ticker-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track {
+    animation: none;
+  }
+
+}

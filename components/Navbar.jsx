@@ -16,7 +16,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-zinc-950/90 shadow-md backdrop-blur-md">
+    <nav className="sticky top-8 z-50 bg-zinc-950/90 shadow-md backdrop-blur-md sm:top-9">
       <div className="mx-auto flex max-w-7xl items-center justify-between p-4 md:p-5">
         <Link href="/" className="flex items-center gap-3">
           <Image
