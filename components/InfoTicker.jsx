@@ -11,7 +11,7 @@ const items = [
 
 export default function InfoTicker() {
   return (
-    <div className="sticky top-0 z-[60] overflow-hidden border-b border-white/10 bg-lime-400 py-2 text-zinc-950 shadow-lg shadow-lime-400/20">
+    <div className="sticky top-0 z-[60] overflow-hidden border-b border-white/10 bg-white py-2 text-zinc-950 shadow-lg shadow-lime-400/20">
       <div className="ticker-track flex w-max" aria-label={items.join(" • ")}>
         {[0, 1].map((copy) => (
           <div className="flex shrink-0 items-center" key={copy} aria-hidden={copy === 1}>
