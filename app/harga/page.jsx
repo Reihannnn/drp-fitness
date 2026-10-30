@@ -7,6 +7,8 @@ export const metadata = {
   title: "Harga Visit, Member, Senam & Boxing",
   description:
     "Daftar harga DRP Fitness Cibitung: Visit, membership 1 bulan, senam, boxing, muaythai, dan personal trainer solo, duo, atau trio.",
+  alternates: { canonical: "/harga" },
+  openGraph: { url: "/harga" },
 };
 
 const faqs = [

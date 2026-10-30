@@ -7,7 +7,9 @@ import { trainers } from "@/data/site";
 export const metadata = {
   title: "Pelatih & Personal Trainer",
   description:
-    "Kenalan dengan pelatih DRP Fitness Cibitung: program terarah untuk pemula sampai lanjutan, didampingi personal trainer berpengalaman.",
+    "Kenali Aji, personal trainer di DRP Fitness Cibitung. Lihat pendekatan latihan dan hubungi gym untuk menanyakan paket sesi yang tersedia.",
+  alternates: { canonical: "/pelatih" },
+  openGraph: { url: "/pelatih" },
 };
 
 export default function PelatihPage() {

@@ -5,7 +5,10 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import InfoTicker from "@/components/InfoTicker";
+import { siteInfo } from "@/data/site";
 import "./globals.css";
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://drp-fitness.my.id";
 
 const sans = Plus_Jakarta_Sans({ subsets: ["latin"], display: "swap" });
 const display = Oswald({
@@ -16,7 +19,7 @@ const display = Oswald({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://drpfitness.id"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "DRP Fitness Cibitung — Gym, Personal Trainer & Kelas",
     template: "%s | DRP Fitness Cibitung",
@@ -39,6 +42,7 @@ export const metadata = {
     images: [{ url: "/image/background.webp", width: 1200, height: 630 }],
   },
   twitter: { card: "summary_large_image" },
+  alternates: { canonical: "/" },
   robots: { index: true, follow: true },
   icons: {
     icon: "/image/drp_logo.webp",
@@ -48,8 +52,12 @@ export const metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "ExerciseGym",
+  "@type": ["ExerciseGym", "HealthClub"],
+  "@id": `${siteUrl}/#gym`,
   name: "DRP Fitness",
+  url: siteUrl,
+  image: `${siteUrl}/image/background.webp`,
+  logo: `${siteUrl}/image/drp_logo.webp`,
   description:
     "Gym di Cibitung, Bekasi dengan personal trainer, kelas senam, boxing & muaythai.",
   address: {
@@ -63,7 +71,9 @@ const jsonLd = {
   },
   geo: { "@type": "GeoCoordinates", latitude: -6.2564664, longitude: 107.0827773 },
   openingHours: "Mo-Su 07:00-22:00",
-  telephone: "+62-813-8433-4250",
+  telephone: siteInfo.phone,
+  priceRange: "Rp20.000–Rp1.000.000",
+  hasMap: siteInfo.mapsUrl,
   sameAs: [
     "https://www.instagram.com/drpfitness21/",
     "https://www.tiktok.com/@drpfitness21",
@@ -76,7 +86,9 @@ export default function RootLayout({ children }) {
       <body className={`${sans.className} ${display.variable} antialiased`}>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+          }}
         />
         <InfoTicker />
         <Navbar />

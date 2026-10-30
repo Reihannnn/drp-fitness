@@ -1,0 +1,17 @@
+# DRP Fitness
+
+> DRP Fitness is a gym in Cibitung, Kabupaten Bekasi, Indonesia. It offers gym access, personal training, senam, boxing, and muaythai.
+
+- Website: https://drp-fitness.my.id/
+- Address: Perumahan GramaPuri Tamansari No. 14 cc, RW.37, Wanasari, Cibitung, Kabupaten Bekasi, Jawa Barat 17520
+- Phone/WhatsApp: +62 813-8433-4250
+- Hours: Daily, 07:00–22:00 WIB
+- Google Maps: https://www.google.com/maps/place/DRP+GYM/
+
+## Public pages
+
+- [Home](https://drp-fitness.my.id/): Overview, FAQs, location, and services
+- [Pricing](https://drp-fitness.my.id/harga): Gym, class, combat sports, and trainer prices
+- [Facilities](https://drp-fitness.my.id/fasilitas): Equipment and training areas
+- [Trainers](https://drp-fitness.my.id/pelatih): Trainer profile
+- [Location](https://drp-fitness.my.id/lokasi): Address, hours, contact, and map

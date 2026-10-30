@@ -22,6 +22,8 @@ export const metadata = {
   title: "Gym & Personal Trainer di Cibitung, Bekasi",
   description:
     "DRP Fitness Cibitung: gym lengkap, personal trainer, kelas senam, boxing & muaythai. Lihat harga member mulai Rp30rb, fasilitas, dan lokasi.",
+  alternates: { canonical: "/" },
+  openGraph: { url: "/" },
 };
 
 const highlights = [

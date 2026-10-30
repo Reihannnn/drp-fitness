@@ -7,6 +7,8 @@ export const metadata = {
   title: "Lokasi & Jam Buka",
   description:
     "Lokasi DRP Fitness: Perumahan GramaPuri Tamansari No. 14 cc, Wanasari, Cibitung, Bekasi. Buka setiap hari 07:00–22:00 WIB.",
+  alternates: { canonical: "/lokasi" },
+  openGraph: { url: "/lokasi" },
 };
 
 const info = [

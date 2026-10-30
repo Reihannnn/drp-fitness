@@ -7,6 +7,8 @@ export const metadata = {
   title: "Fasilitas Gym Lengkap",
   description:
     "Fasilitas DRP Fitness Cibitung: smith machine bench press, machine zone, cardio zone treadmill, leg machine, back machine, chest area, dan dumbbell.",
+  alternates: { canonical: "/fasilitas" },
+  openGraph: { url: "/fasilitas" },
 };
 
 export default function FasilitasPage() {
